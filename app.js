@@ -90,10 +90,11 @@ function deleteSubject(name) {
     }
     total_cg -= removed.cg;
     subject_list = subject_list.filter(s => s.sub !== name);
+     attemptedCredits -= 3; 
+
     if (removed.cg !== 0) {
-        credits -= 3;
+        credits -= 3; 
     }
-    attemptedCredits -= 3;
 
     coursesShow.innerText = subject_list.map(s =>
         s.sub).join(", ");
