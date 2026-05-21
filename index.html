@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG_CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form onsubmit="handleSubmit(event)">
+        <label>
+            <span>Enter Subject Name:</span>
+            <input placeholder="eg CSE110" name="subject" type="text">
+        </label>
+        <br>
+        <label>
+            <span>Enter CGPA:</span>
+            <input placeholder="eg 3.7" type="text" name="cg">
+        </label>
+        <div id="btn-container">
+            <button type="submit" style="color: red;">Delete</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div class="hidden" id="app">
+        <p>Courses Completed: <span id="courseCompleted"></span></p>
+        <p>Credits Completed: <span id="creditsCompleted"></span></p>
+        <p>Total CG: <span style="color: rgb(148, 206, 121);" id="cgBox"></span></p>
+        <p>Credits Attempted: <span id="creditsAttempted"></span></p>
+    </div>
+
+    <footer>
+        <p><a style="color: blanchedalmond;" href="https://github.com/Ifraj-Crypt0">@Ifraj-Crypt0</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
